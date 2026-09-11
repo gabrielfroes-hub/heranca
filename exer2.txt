@@ -1,0 +1,30 @@
+﻿class Program
+{
+    static void Main()
+    {
+        Funcionario funcionario = new Funcionario();
+        funcionario.Nome = "Carlos";
+        funcionario.Salario = 3000;
+
+        Gerente gerente = new Gerente();
+        gerente.Nome = "João";
+        gerente.Salario = 5000;
+
+        Desenvolvedor desenvolvedor = new Desenvolvedor();
+        desenvolvedor.Nome = "Pedro";
+        desenvolvedor.Salario = 4000;
+
+        Console.WriteLine("Funcionário: " + funcionario.Nome);
+        Console.WriteLine("Bônus anual: R$ " + funcionario.CalcularBonusAnual());
+
+        Console.WriteLine();
+
+        Console.WriteLine("Gerente: " + gerente.Nome);
+        Console.WriteLine("Bônus anual: R$ " + gerente.CalcularBonusAnual());
+
+        Console.WriteLine();
+
+        Console.WriteLine("Desenvolvedor: " + desenvolvedor.Nome);
+        Console.WriteLine("Bônus anual: R$ " + desenvolvedor.CalcularBonusAnual());
+    }
+}
